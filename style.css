@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+#square {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: rgb(255, 4, 4);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border-radius: 5px;
+
+    position: absolute; /* робить, щоб ел випадав з основного потоку ел-тів, щоб не впливав ні на що, коли рухається */
+    top: 50%;  /* вирівнює ел по центру по верхньому краю ел*/
+    left: 50%; /* вирівнює ел по центру по лівому краю ел, тобто ел буде зміщений від центра сторінки на 1.2 ширини ел-та*/
+    transform: translate(-50%, -50%);  /* вирівнює на 50% від себе, тобто чітко по центру*/
+    transition: all .3s; /* для плавного руху ел*/
+}
